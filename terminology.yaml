@@ -1,0 +1,59 @@
+
+- title: "Experimentation at Tubi"
+  link: https://code.tubitv.com/experimentation-at-tubi-82f35afe2732
+  orgs: Tubi
+  terms:
+    experiment engine:
+    namespace: represents "a group of mutually exclusive experiments"
+    assignment: mapping experiment targets to segments, done by a namespace
+    targets: '"e.g. devices, users, IPs, etc"'
+    segment: '"a group of experimental targets, allocated to at most one experiment"'
+    allocation: mapping of segments to experiments
+    treatment group:
+    phase: stage of an experiment. Different phases "reserve differing amounts of
+      segments".
+    condition: Logic that refines segments, e.g. "only new users".
+    start date:
+    end date:
+    override: '"inclusion of development and test devices in particular experiments
+      and treatment groups"'
+    graduate: progression of an experiment to the next phase
+    exposure: the event where a target is impacted by a namespace, experiment, and
+      treatment group.
+    metrics: 
+    Northstar metrics: "A small subset of metrics that are closest to top-level company
+      KPIs"
+    do-no-harm criterion: "an experiment that harms any Northstar metric cannot be
+      graduated without...a...review process."
+    uneven split: a large difference between the number of users in each group
+    
+- title: Trustworthy Online Controlled Experimentation
+  link: experimentguide.com
+  orgs: Microsoft, Amazon, Google, LinkedIn
+  terms:
+    online controlled experiment: "users are split between variants in a persistent
+      manner"
+    instrumentation: monitoring and logging of a system
+    metric:
+    overall evaluation criterion (OEC): "A quantitative measure of the experiment's
+      objective...For example...active days per user..." May be a combination of
+      metrics. Also known as the response or the dependent variable.
+    parameter: "A controllable experimental variable that is thought to
+      influence...metrics of interest."
+    value: A specific value assigned to a variable parameter. If the parameter is font
+      color, for example, then a value might be 'blue'.
+    variant: the experience being tested, created by assigning values to all the
+      parameters. In an A/B test, A and B represent the two variants. Similarly,
+      'control' and 'treatment' are variants.
+    control: a special variant, namely the "existing version on which to run the
+      comparison."
+    treatment:
+    unit: "e.g., users or pages"
+    randomization (unit): application of a pseudo-random process to map units to
+      variants. For online audiences, it is common to use 'users' as the randomization
+      unit, but it is also possible to randomize by pages, sessions, or user-day.
+    
+    
+
+
+  
