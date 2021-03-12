@@ -1,4 +1,40 @@
 
+- title: 'It’s All A/Bout Testing: The Netflix Experimentation Platform'
+  link: https://netflixtechblog.com/its-all-a-bout-testing-the-netflix-experimentation-platform-4e1ca458c15#annotations:pRwJrnugEeucIWdt9l-iJw
+  orgs: Netflix
+  authors: Steve Urban, Rangarajan Sreenivasan, Vineet Kannan
+  terms:
+    A/B test: an experiment with a control group and one or more experimental groups
+    control group:
+    experimental group:
+    cell: a group of users
+    treatment:
+    default cell: the group of users that receives the control treatment, which is the
+      same experience as all Netflix users not in the test.
+    metric: outcomes of importance, typically streaming hours and retention
+    allocation: how users are assigned to a test
+    batch allocation:
+    real-time allocation:
+    stratified sampling:
+
+- title: Improving Experimentation Efficiency at Netflix with Meta Analysis and Optimal Stopping
+  link: https://netflixtechblog.com/improving-experimentation-efficiency-at-netflix-with-meta-analysis-and-optimal-stopping-d8ec290ae5be
+  orgs: Netflix
+  authors: Gang Su, Ian Yohai
+  terms:
+    power analysis:
+    seasonality:
+    novelty effect:
+    treatment effect:
+    HARKing:
+    p-hacking:
+    fixed effect model:
+    random effect model:
+    heterogeneous treatment effects:
+    sequential triangular testing:
+    group sequential testing:
+    
+
 - title: Statistics For Experimenters, 2nd edition
   link: https://statisticsforexperimenters.net/
   orgs:
