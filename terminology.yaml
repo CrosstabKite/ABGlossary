@@ -1,4 +1,45 @@
 
+- title: Optimization Glossary
+  link: https://www.optimizely.com/optimization-glossary/
+  orgs: Optimizely
+  authors:
+  terms:
+    A/A test: "A method of comparing two versions of a webpage or mobile app experience
+      against each other in order to test the accuracy of the testing tool."
+    A/B/N test: "A method of comparing multiple versions of webpage or mobile app
+      against each other to determine which performs best."
+    A/B test: "A method of comparing two versions of a webpage or mobile app experience
+      against each other to determine which performs best."
+    Bucket test: "A method of testing two versions of a website or app against one
+      another to see which one performs better on specified key metrics. Synonym for split
+      testing."
+    Canary test: "A way to reduce risk and validate new software by releasing software
+      to a small percentage of users."
+    Multi-armed bandit: "A form of A/B testing that uses machine learning algorithms to
+      dynamically allocate traffic to variations that are performing well."
+    Multivariate test: "A technique for testing a hypothesis where multiple variables
+      are modified, in order to determine the best combination of variations on those
+      elements of a website or mobile app."
+    Split test: "A strategy for conducting controlled, randomized experiments with the
+      goal of improving a conversion metric on a website or mobile app."
+
+- title: Switchback Tests and Randomized Experimentation Under Network Effects at DoorDash
+  link: https://medium.com/@DoorDash/switchback-tests-and-randomized-experimentation-under-network-effects-at-doordash-f1d938ab7c2a
+  orgs: DoorDash
+  authors: David Kastelman, Raghav Ramesh
+  terms:
+    network effect: adding a subject to the treatment group affects the experience of
+      subjects in the control group, so the two groups are not independent
+    switchback test: a treatment protocol where the treatment window is divided into
+      time periods. In each time period the entire sample receives one variant (e.g.
+      treatment or control), chosen randomly.
+    A/A test: "a dummy experiment where there’s no actual difference between 'treatment'
+      and 'control'".
+    bias: occurs when randomization is compromised so that subjects in the treatment and
+      control groups are not the same, on average
+    margin of error: "how much uncertainty exists in our estimate of the impact of an
+      intervention."
+
 - title: Server-Side Testing
   link: https://vwo.com/server-side-testing/
   orgs: VWO
