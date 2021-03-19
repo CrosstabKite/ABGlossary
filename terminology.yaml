@@ -1,4 +1,47 @@
 
+- title: Server-Side Testing
+  link: https://vwo.com/server-side-testing/
+  orgs: VWO
+  authors:
+  terms:
+    server-side test: "a method of A/B testing wherein the variations of a test are
+      rendered directly from the webserver"
+    client-side test: website variations are delivered by the visitors' browser
+      (client). "Limited to cosmetic changes; experiments revolve around the design,
+      placement, messaging of the key elements on a web page"
+    feature flag: " enable you to turn your features ON/OFF and thereby alter user
+      experience, without having to deploy new code."
+    feature toggle: synonym for 'feature flag'
+    staged rollout: make a particular feature available to only a small percentage of
+      the audience, systematically making it available to all customers in progressive
+      stages.
+    flicker effect: "the phenomenon wherein the original content of a page appears for a
+      very short while before the variation loads." AKA the "Flash Of Original Content".
+
+- title: A/B Testing Guide
+  link: https://vwo.com/ab-testing/
+  orgs: VWO
+  authors:
+  terms:
+    A/B test: the "process of showing two variants of the same web page to different
+      segments of website visitors at the same time and comparing which variant drives
+      more conversions."
+    variant:
+    variation: a version of your system "with changes that you want to test"
+    metric:
+    hypothesis:
+    split URL test: "testing multiple versions of your webpage hosted on different
+      URLs." Differs from A/B testing in that the latter implements variations at the
+      same URL. "preferred when significant design changes are necessary and don’t want
+      to touch the existing website design."
+    multivariate testing: "changes are made to multiple sections of a webpage, and
+      variations are created for all the possible combinations...you can test all the
+      combinations within a single test."
+    multipage testing: "Multipage testing is a form of experimentation where you can
+      test changes to particular elements across multiple pages"
+
+
+
 - title: 'It’s All A/Bout Testing: The Netflix Experimentation Platform'
   link: https://netflixtechblog.com/its-all-a-bout-testing-the-netflix-experimentation-platform-4e1ca458c15#annotations:pRwJrnugEeucIWdt9l-iJw
   orgs: Netflix
