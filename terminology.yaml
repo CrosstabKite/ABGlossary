@@ -1,110 +1,144 @@
 
 - title: Optimization Glossary
   link: https://www.optimizely.com/optimization-glossary/
-  orgs: Optimizely
+  orgs: 
+    - Optimizely
   authors:
   terms:
-    A/A test: "A method of comparing two versions of a webpage or mobile app experience
-      against each other in order to test the accuracy of the testing tool."
-    A/B/N test: "A method of comparing multiple versions of webpage or mobile app
+    A/A test: >-
+      "A method of comparing two versions of a webpage or mobile app experience against
+      each other in order to test the accuracy of the testing tool."
+    A/B/N test: >-
+      "A method of comparing multiple versions of webpage or mobile app against each
+      other to determine which performs best."
+    A/B test: >-
+      "A method of comparing two versions of a webpage or mobile app experience
       against each other to determine which performs best."
-    A/B test: "A method of comparing two versions of a webpage or mobile app experience
-      against each other to determine which performs best."
-    Bucket test: "A method of testing two versions of a website or app against one
-      another to see which one performs better on specified key metrics. Synonym for split
-      testing."
-    Canary test: "A way to reduce risk and validate new software by releasing software
-      to a small percentage of users."
-    Multi-armed bandit: "A form of A/B testing that uses machine learning algorithms to
-      dynamically allocate traffic to variations that are performing well."
-    Multivariate test: "A technique for testing a hypothesis where multiple variables
-      are modified, in order to determine the best combination of variations on those
-      elements of a website or mobile app."
-    Split test: "A strategy for conducting controlled, randomized experiments with the
-      goal of improving a conversion metric on a website or mobile app."
+    bucket test: >-
+      "A method of testing two versions of a website or app against one another to see
+      which one performs better on specified key metrics. Synonym for split testing."
+    canary test: >-
+      "A way to reduce risk and validate new software by releasing software to a small
+      percentage of users."
+    multi-armed bandit: >-
+      "A form of A/B testing that uses machine learning algorithms to dynamically
+      allocate traffic to variations that are performing well."
+    multivariate test: >-
+      "A technique for testing a hypothesis where multiple variables are modified, in
+      order to determine the best combination of variations on those elements of a
+      website or mobile app."
+    split test: >-
+      "A strategy for conducting controlled, randomized experiments with the goal of
+      improving a conversion metric on a website or mobile app."
 
-- title: Switchback Tests and Randomized Experimentation Under Network Effects at DoorDash
+- title: Switchback Tests and Randomized Experimentation Under Network Effects at
+    DoorDash
   link: https://medium.com/@DoorDash/switchback-tests-and-randomized-experimentation-under-network-effects-at-doordash-f1d938ab7c2a
-  orgs: DoorDash
-  authors: David Kastelman, Raghav Ramesh
+  orgs: 
+    - DoorDash
+  authors:
+    - David Kastelman
+    - Raghav Ramesh
   terms:
-    network effect: adding a subject to the treatment group affects the experience of
-      subjects in the control group, so the two groups are not independent
-    switchback test: a treatment protocol where the treatment window is divided into
-      time periods. In each time period the entire sample receives one variant (e.g.
-      treatment or control), chosen randomly.
-    A/A test: "a dummy experiment where there’s no actual difference between 'treatment'
-      and 'control'".
-    bias: occurs when randomization is compromised so that subjects in the treatment and
+    network effect: >-
+      adding a subject to the treatment group affects the experience of subjects in the
+      control group, so the two groups are not independent
+    switchback test: >-
+      a treatment protocol where the treatment window is divided into time periods. In
+      each time period the entire sample receives one variant (e.g. treatment or
+      control), chosen randomly.
+    A/A test: >-
+      "a dummy experiment where there’s no actual difference between treatment and
+      control".
+    bias: >-
+      occurs when randomization is compromised so that subjects in the treatment and
       control groups are not the same, on average
-    margin of error: "how much uncertainty exists in our estimate of the impact of an
-      intervention."
+    margin of error: >-
+      "how much uncertainty exists in our estimate of the impact of an intervention."
 
 - title: Server-Side Testing
   link: https://vwo.com/server-side-testing/
-  orgs: VWO
+  orgs:
+    - VWO
   authors:
   terms:
-    server-side test: "a method of A/B testing wherein the variations of a test are
-      rendered directly from the webserver"
-    client-side test: website variations are delivered by the visitors' browser
-      (client). "Limited to cosmetic changes; experiments revolve around the design,
-      placement, messaging of the key elements on a web page"
-    feature flag: " enable you to turn your features ON/OFF and thereby alter user
-      experience, without having to deploy new code."
+    server-side test: >-
+      "a method of A/B testing wherein the variations of a test are rendered directly
+      from the webserver"
+    client-side test: >-
+      website variations are delivered by the visitors' browser (client). "Limited to
+      cosmetic changes; experiments revolve around the design, placement, messaging of
+      the key elements on a web page"
+    feature flag: >-
+      "enable you to turn your features ON/OFF and thereby alter user experience,
+      without having to deploy new code."
     feature toggle: synonym for 'feature flag'
-    staged rollout: make a particular feature available to only a small percentage of
-      the audience, systematically making it available to all customers in progressive
-      stages.
-    flicker effect: "the phenomenon wherein the original content of a page appears for a
-      very short while before the variation loads." AKA the "Flash Of Original Content".
+    staged rollout: >-
+      make a particular feature available to only a small percentage of the audience,
+      systematically making it available to all customers in progressive stages.
+    flicker effect: >-
+      "the phenomenon wherein the original content of a page appears for a very short
+      while before the variation loads." AKA the "Flash Of Original Content".
 
 - title: A/B Testing Guide
   link: https://vwo.com/ab-testing/
-  orgs: VWO
+  orgs:
+    - VWO
   authors:
   terms:
-    A/B test: the "process of showing two variants of the same web page to different
-      segments of website visitors at the same time and comparing which variant drives
-      more conversions."
+    A/B test: >-
+      the "process of showing two variants of the same web page to different segments of
+      website visitors at the same time and comparing which variant drives more
+      conversions."
     variant:
     variation: a version of your system "with changes that you want to test"
     metric:
     hypothesis:
-    split URL test: "testing multiple versions of your webpage hosted on different
-      URLs." Differs from A/B testing in that the latter implements variations at the
-      same URL. "preferred when significant design changes are necessary and don’t want
-      to touch the existing website design."
-    multivariate testing: "changes are made to multiple sections of a webpage, and
-      variations are created for all the possible combinations...you can test all the
-      combinations within a single test."
-    multipage testing: "Multipage testing is a form of experimentation where you can
-      test changes to particular elements across multiple pages"
-
-
+    split URL test: >-
+      "testing multiple versions of your webpage hosted on different URLs." Differs from
+      A/B testing in that the latter implements variations at the same URL. "preferred
+      when significant design changes are necessary and don’t want to touch the existing
+      website design."
+    multivariate testing: >-
+      "changes are made to multiple sections of a webpage, and variations are created
+      for all the possible combinations...you can test all the combinations within a
+      single test."
+    multipage testing: >-
+      "Multipage testing is a form of experimentation where you can test changes to
+      particular elements across multiple pages"
 
 - title: 'It’s All A/Bout Testing: The Netflix Experimentation Platform'
   link: https://netflixtechblog.com/its-all-a-bout-testing-the-netflix-experimentation-platform-4e1ca458c15#annotations:pRwJrnugEeucIWdt9l-iJw
-  orgs: Netflix
-  authors: Steve Urban, Rangarajan Sreenivasan, Vineet Kannan
+  orgs:
+    - Netflix
+  authors:
+    - Steve Urban
+    - Rangarajan Sreenivasan
+    - Vineet Kannan
   terms:
     A/B test: an experiment with a control group and one or more experimental groups
     control group:
     experimental group:
     cell: a group of users
     treatment:
-    default cell: the group of users that receives the control treatment, which is the
-      same experience as all Netflix users not in the test.
-    metric: outcomes of importance, typically streaming hours and retention
+    default cell: >-
+      the group of users that receives the control treatment, which is the same
+      experience as all Netflix users not in the test.
+    metric: outcome of importance, typically streaming hours and retention
     allocation: how users are assigned to a test
     batch allocation:
     real-time allocation:
     stratified sampling:
 
-- title: Improving Experimentation Efficiency at Netflix with Meta Analysis and Optimal Stopping
+- title: 
+    Improving Experimentation Efficiency at Netflix with Meta Analysis and Optimal
+    Stopping
   link: https://netflixtechblog.com/improving-experimentation-efficiency-at-netflix-with-meta-analysis-and-optimal-stopping-d8ec290ae5be
-  orgs: Netflix
-  authors: Gang Su, Ian Yohai
+  orgs:
+    - Netflix
+  authors:
+    - Gang Su
+    - Ian Yohai
   terms:
     power analysis:
     seasonality:
@@ -122,85 +156,111 @@
 - title: Statistics For Experimenters, 2nd edition
   link: https://statisticsforexperimenters.net/
   orgs:
-  authors: George E.P. Box, J. Stuart Hunter, William G. Hunter
+  authors: 
+    - George E.P. Box
+    - J. Stuart Hunter
+    - William G. Hunter
   terms:
     factor: controllable input variable
-    level: a value of a factor. If the factor were font color, the levels might be blue
-      and black.
+    level: >-
+      a value of a factor. If the factor were font color, the levels might be blue and
+      black.
     response: output variable
-    error: "variability not explained by known influences". Also, "the fluctuation that
-      occurs from one repetition to another". AKA 'experimental error', 'experimental
-      variation'. 
-    run: "an experimental run has been performed when an apparatus has been set up and
+    error: >-
+      "variability not explained by known influences." Also, "the fluctuation that
+      occurs from one repetition to another". AKA experimental error, experimental
+      variation.
+    run: >-
+      "an experimental run has been performed when an apparatus has been set up and
       allowed to function under a specific set of experimental conditions."
-    block: a portion of experimental material expected to be more homogeneous than the
+    block: >-
+      a portion of experimental material expected to be more homogeneous than the
       aggregate. 
-    blocking: comparisons within blocks have greater precision because between-block
-      variability is eliminated. For example, testing shoe materials by asking each
-      person to wear the new shoe on either their right or left foot, randomly.
-    randomization: force unknown discrepancies between treatments to contribute
-      homogeneously to the errors of each. This should be done after 'known' sources of
-      discrepancy are removed by holding them constant or blocking.
-    factorial design: conduct experiment runs in all possible combinations of levels
-      across multiple factors.
+    blocking: >-
+      comparisons within blocks have greater precision because between-block variability
+      is eliminated. For example, testing shoe materials by asking each person to wear
+      the new shoe on either their right or left foot, randomly.
+    randomization: >-
+      force unknown discrepancies between treatments to contribute homogeneously to the
+      errors of each. This should be done after 'known' sources of discrepancy are
+      removed by holding them constant or blocking.
+    factorial design: >-
+      conduct experiment runs in all possible combinations of levels across multiple
+      factors.
   
-- title: "Experimentation at Tubi"
+- title: Experimentation at Tubi
   link: https://code.tubitv.com/experimentation-at-tubi-82f35afe2732
-  orgs: Tubi
-  authors: Change She
+  orgs: 
+    - Tubi
+  authors:
+    - Change She
   terms:
     experiment engine:
     namespace: represents "a group of mutually exclusive experiments"
     assignment: mapping experiment targets to segments, done by a namespace
-    targets: '"e.g. devices, users, IPs, etc"'
-    segment: '"a group of experimental targets, allocated to at most one experiment"'
+    targets: >- 
+      "e.g. devices, users, IPs, etc"
+    segment: >-
+      "a group of experimental targets, allocated to at most one experiment"
     allocation: mapping of segments to experiments
     treatment group:
-    phase: stage of an experiment. Different phases "reserve differing amounts of
-      segments".
-    condition: Logic that refines segments, e.g. "only new users".
+    phase: >-
+      stage of an experiment. Different phases "reserve differing amounts of segments".
+    condition: logic that refines segments, e.g. "only new users".
     start date:
     end date:
-    override: '"inclusion of development and test devices in particular experiments
-      and treatment groups"'
+    override: >-
+      "inclusion of development and test devices in particular experiments and treatment
+      groups"
     graduate: progression of an experiment to the next phase
-    exposure: the event where a target is impacted by a namespace, experiment, and
-      treatment group.
+    exposure: >-
+      the event where a target is impacted by a namespace, experiment, and treatment
+      group.
     metric: 
-    Northstar metrics: "A small subset of metrics that are closest to top-level company
-      KPIs"
-    do-no-harm criterion: "an experiment that harms any Northstar metric cannot be
-      graduated without...a...review process."
+    Northstar metrics: >-
+      "A small subset of metrics that are closest to top-level company KPIs"
+    do-no-harm criterion: >-
+      "an experiment that harms any Northstar metric cannot be graduated
+      without...a...review process."
     uneven split: a large difference between the number of users in each group
     
 - title: Trustworthy Online Controlled Experimentation
   link: experimentguide.com
-  orgs: Microsoft, Amazon, Google, LinkedIn
-  authors: Ron Kohavi, Diane Tang, Ya Xu
+  orgs:
+    - Microsoft
+    - Amazon
+    - Google
+    - LinkedIn
+  authors: 
+    - Ron Kohavi
+    - Diane Tang
+    - Ya Xu
   terms:
-    online controlled experiment: "users are split between variants in a persistent
-      manner"
+    online controlled experiment: >-
+      "users are split between variants in a persistent manner"
     instrumentation: monitoring and logging of a system
     metric:
-    overall evaluation criterion (OEC): "A quantitative measure of the experiment's
-      objective...For example...active days per user..." May be a combination of
-      metrics. Also known as the response or the dependent variable.
-    parameter: "A controllable experimental variable that is thought to
-      influence...metrics of interest."
-    value: A specific value assigned to a variable parameter. If the parameter is font
-      color, for example, then a value might be 'blue'.
-    variant: the experience being tested, created by assigning values to all the
-      parameters. In an A/B test, A and B represent the two variants. Similarly,
-      'control' and 'treatment' are variants.
-    control: a special variant, namely the "existing version on which to run the
-      comparison."
+    overall evaluation criterion (OEC): >-
+      "A quantitative measure of the experiment's objective...For example...active days
+      per user..." May be a combination of metrics. AKA the response or the dependent
+      variable.
+    parameter: >-
+      "A controllable experimental variable that is thought to influence...metrics of
+      interest."
+    value: >-
+      a specific value assigned to a variable parameter. If the parameter is font color,
+      for example, then a value might be 'blue'.
+    variant: >-
+      the experience being tested, created by assigning values to all the parameters. In
+      an A/B test, A and B represent the two variants. Similarly, 'control' and
+      'treatment' are variants.
+    control: >-
+      a special variant, namely the "existing version on which to run the comparison."
     treatment:
-    unit: "e.g., users or pages"
+    unit: >-
+      "e.g., users or pages"
     randomization (unit): application of a pseudo-random process to map units to
-      variants. For online audiences, it is common to use 'users' as the randomization
+      variants. For online audiences, it is common to use users as the randomization
       unit, but it is also possible to randomize by pages, sessions, or user-day.
     
-    
-
-
   
