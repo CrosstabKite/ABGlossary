@@ -316,7 +316,7 @@
     uneven split: a large difference between the number of users in each group
     
 - title: Trustworthy Online Controlled Experimentation
-  link: experimentguide.com
+  link: https://experimentguide.com/
   orgs:
     - Microsoft
     - Amazon
