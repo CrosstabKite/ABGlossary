@@ -79,7 +79,11 @@ def build_results_table(hits: list, sort: str = None):
     return table
 
 
-@click.command()
+@click.group()
+def translate():
+    pass
+
+@translate.command()
 @click.option("-t", "--term", help="Filter results to a specific term.")
 @click.option("-o", "--org", help="Filter results to this organization.")
 @click.option("-s", "--sort", help="Which output column to sort by.")
@@ -89,10 +93,10 @@ def build_results_table(hits: list, sort: str = None):
     is_flag=True,
     help="If specified, print entire entries instead of condensed table.",
 )
-def search(
+def query(
     term: str = None, org: str = None, sort: str = None, verbose: bool = False
 ) -> dict:
-    """Filter articles by a specific term and/or company."""
+    """Filter term definitions by organization and/or term."""
 
     hits = filter_articles(term, org)
 
@@ -110,11 +114,32 @@ def search(
     return results
 
 
+@translate.command()
+@click.argument("field")
+def list(field):
+    """List all organizations, terms, or sources.
+
+    FIELD may be one of "Orgs", "Terms", or "Sources".
+    """
+    console = Console()
+
+    if field == "Sources":
+        results = sorted([x["title"] for x in data])
+
+    elif field == "Orgs":
+        results = [org for x in data for org in x['orgs']]
+        results = sorted(dict.fromkeys(results).keys())
+
+    elif field == "Terms":
+        results = [term for x in data for term in x["terms"].keys()]
+        results = sorted(dict.fromkeys(results).keys())
+
+    else:
+        console.log("That's not a valid field.")
+        return
+
+    console.print(results)
+
 if __name__ == "__main__":
-    results = search()
+    results = translate()
 
-    # term = "variant"
-    # company = "Amazon"
-
-    # results = filter_by_term(data, term, company)
-    # rprint(results)
