@@ -1,4 +1,95 @@
 
+- title: Under the Hood of Uber’s Experimentation Platform
+  link: https://eng.uber.com/xp/
+  orgs:
+    - Uber
+  authors:
+    - Anirban Deb
+    - Suman Bhattacharya
+    - Jeremy Gu
+    - Tianxia Zhou
+    - Eva Feng
+    - Mandie Liu
+  terms:
+    A/B test: >-
+      "randomly split users into control and treatment groups to compare the decision
+      metrics between these groups and determine the experiment’s treatment effects."
+    A/B/N test:
+    hypothesis:
+    metric:
+    decision metric:
+    continuous metric: >-
+      "contain one numeric value column, e.g., gross bookings per user."
+    proportion metric: >-
+      "contain one binary indicator value column, e.g., to test the proportion of users
+      who complete any trips after sign-up."
+    ratio metric: >-
+      "contain two numeric value columns, the numerator values and the denominator
+      values, e.g., the trip completion ratio"
+    treatment effect:
+    lift: synonym for 'treatment effect'. Also referred to as 'causal lift'.
+    control group:
+    treatment group:
+    multi-armed bandit:
+    regression:
+    universal holdout: >-
+      "used to measure the long-term effects of all experiments for a specific domain."
+    sample size imbalance: >-
+      "the sample size ratio in the control and treatment groups is significantly
+      different from what was expected."
+    flicker: >-
+      a user who has "switched between control and treatment groups. For example, a
+      rider purchases a new Android cell phone to replace an old iPhone, while the
+      treatment of the experiment was only configured for iOS."
+    pre-experiment bias:
+    sequential test:
+    
+- title: Ramblings on Experimentation Pitfalls, Part 1
+  link: https://eng.lyft.com/ramblings-on-experimentation-pitfalls-dd554ff87c0e
+  orgs:
+    - Lyft
+  authors:
+    - "timothybrownsf"
+  terms:
+    rollout: >- 
+      A protocol for a staged, test-based launch of a new idea that uses a "holdout"
+      group in addition to control and treatment groups. In the first stage, for
+      example, the allocation of subjects might be (10% control, 10% treatment, 80%
+      holdout). The next stage might be (50% control, 50% treatment, 0% holdout). The
+      goal is to avoid the analysis mistake of weighting each observational subject
+      equally across all stages, rather than (correctly) doing the analysis for each
+      stage separately.
+    variant:
+    control:
+    treatment:
+    split:
+    holdout: >-
+      a group of subjects (users) who are in the target population for an A/B
+      test, but not part of either the control or treatment group.
+
+- title: Increasing the sensitivity of A/B tests by utilizing the variance estimates of experimental units
+  link: https://research.fb.com/blog/2020/10/increasing-the-sensitivity-of-a-b-tests-by-utilizing-the-variance-estimates-of-experimental-units/
+  orgs:
+    - Facebook
+  authors:
+    - Kevin Liou
+    - Sean Taylor
+  terms:
+    online experiment:
+    A/B test: 
+    experimental unit:
+    randomized field experiment: synonym of "A/B test"
+    sensitivity: >-
+      A successful A/B test "must be capable of detecting effects that product changes
+      generate. From a hypothesis-testing perspective, experimenters aim to have high
+      statistical power".
+    metric:
+    treatment effect:
+    regression adjustment: synonym of "CUPED"
+    CUPED: synonym of "regression adjustment"
+    sample size:
+    stratification:
+
 - title: Optimization Glossary
   link: https://www.optimizely.com/optimization-glossary/
   orgs: 
@@ -148,7 +239,7 @@
     p-hacking:
     fixed effect model:
     random effect model:
-    heterogeneous treatment effects:
+    heterogeneous treatment effect:
     sequential triangular testing:
     group sequential testing:
     
