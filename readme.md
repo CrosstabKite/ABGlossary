@@ -113,7 +113,8 @@ data exactly to be retrieved.
 
 The data file
 -------------
-Skimming or searching for the text in the data file is also a good way to use the data.
+Skimming or searching for the text in the data file (`terminology.yaml`) is also a good
+way to use the data.
 
 The data is organized by source, e.g. a blog post, product documentation, book chapter.
 Each source has a *title*, URL *link*, organizations involved (*orgs*), authors if

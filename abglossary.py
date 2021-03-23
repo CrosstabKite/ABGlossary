@@ -1,4 +1,5 @@
 """
+A command line utility to query the A/B test terminology data.
 """
 
 import click
@@ -19,7 +20,8 @@ for x in data:
 
 
 def filter_articles(term: str = None, org: str = None) -> list:
-    """"""
+    """Find the articles relevant to the given term and organization."""
+
     hits = data[:]
 
     if term:
@@ -32,7 +34,9 @@ def filter_articles(term: str = None, org: str = None) -> list:
 
 
 def filter_terms(hits: list, term: str) -> list:
-    """"""
+    """For each entry in the results (hits), keep only the term requested by the
+    user.
+    """
     for hit in hits:
         hit["terms"] = {k: v for k, v in hit["terms"].items() if k == term}
 
@@ -40,7 +44,7 @@ def filter_terms(hits: list, term: str) -> list:
 
 
 def build_results_table(hits: list, sort: str = None):
-    """"""
+    """Convert dict-format entries into a nice-looking table for console printing."""
 
     ## Build the list of results.
     results = []
@@ -101,7 +105,7 @@ def abglossary():
 def query(
     term: str = None, org: str = None, sort: str = None, verbose: bool = False
 ) -> dict:
-    """Filter term definitions by organization and/or term."""
+    """Query term definitions, filtering by organization and/or term."""
 
     hits = filter_articles(term, org)
 
