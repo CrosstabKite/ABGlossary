@@ -1,4 +1,89 @@
 
+- title: "Glossary of terms: The language, lexicon and lingo of testing"
+  link: https://support.google.com/optimize/answer/6211939?hl=en&ref_topic=6315913
+  orgs:
+    - Google
+  authors:
+  terms:
+    A/B test: >-
+      "A randomized experiment using two or more variants of the same web page (A and
+      B). Variant A is the original and variant B through n each contain at least one
+      element that is modified from the original."
+    A/B/n test: synonym for "A/B test"
+    experiment: >-
+      "a method of testing different variants of web pages to determine which is most
+      effective at achieving an objective. Examples include A/B, redirect, and
+      multivariate tests."
+    change list: >-
+      "A list of changes that are applied to one or more elements on your web page when
+      your visitor arrives."
+    combination: >-
+      "In a multivariate test (MVT) with multiple sections, a combination is a set of
+      changes created by selecting a single variant from each section. The total number
+      of combinations is the product of the number of variants in each section."
+    container: >-
+      "holds all of the...configuration information for a website’s experiences (tests
+      and personalizations). A "container snippet" is a small piece of JavaScript code
+      that's added to a web page where you want to...present users with a new
+      experience, while a "container ID" is an alphanumeric string (e.g. "GTM-A1B2CD")
+      that uniquely identifies it. You will also see container ID referred to as
+      "OPT_MEASUREMENT_ID" in code samples."
+    leader: >-
+      "The variant that performs best against the objective."
+    modeled objective rate: >-
+      "The long-run average of where Optimize expects the value of the specified
+      objective to land. For example, if you have a revenue objective, Optimize is
+      modeling the long-run average revenue per session. If you have a pageview
+      objective, Optimize is modeling the long-run average pageviews per session."
+    multivariate test: >-
+      "An experiment that tests two or more sections to understand their effects on each
+      other. For example, variants of a headline can be tested at the same time as
+      variants of a hero image. Instead of showing which page variant is most effective
+      (as in an A/B test), a multivariate test identifies the most effective combination
+      of variants. Rather than the two or three page variants found in simple A/B tests,
+      multivariate tests frequently test multiple variants of multiple page elements
+      simultaneously."
+    objective: >-
+      "the website metric you wish to optimize. Think of objectives as the metrics or
+      activities that you'll measure your variants against, e.g. pageviews, bounce rate,
+      time on site, etc."
+    original: >-
+      "Your current web page, prior to any modification." Also known as the "baseline".
+    probability to beat original: >-
+      "(PBO) The probability that a given variant will result in a better conversion
+      rate than the original."
+    probability to be best: >-
+      "(PBB) The probability that a given variant performs better than all other
+      variants."
+    redirect destination: >-
+      "A separate and unique web page used as a variant in a redirect experiment."
+    redirect test: >-
+      "A type of A/B test that allows you to test separate web pages against each other.
+      In redirect tests variants are identified by URL or path instead of an element(s)
+      on the page. Redirect tests are useful when you want to test two very different
+      landing pages, or a complete redesign of a page."
+    section: >-
+      "a group of variants, each of which can modify multiple page elements (e.g. a
+      headline, image, or button). An A/B test only contains one section (with one or
+      more variants), while a multivariate test (MVT) tests multiple sections
+      simultaneously." Also known as "factor", "element".
+    session: >-
+      "The period of time a user is active on your site or app. By default, if a user is
+      inactive for 30 minutes or more, any future activity is attributed to a new
+      session. Users that leave your site and return within 30 minutes are counted as
+      part of the original session."
+    targeting rules: >-
+      "An experiment will only execute when its targeting rules are met. Rules can be
+      used to target everything from geographic regions to specific user behavior."
+    treatment: >-
+      "The original and all variants."
+    variant: >-
+      "A variant can be anything from a change to a single element, or changes to
+      multiple elements, or a totally different page in an experiment. In an A/B test
+      the unit of variant can be a web page or an element of a web page. In a
+      multivariate experiment (MVT) you have multiple variants of each section." Also
+      known as "variation", "level".
+
 - title: Google Optimize Features
   link: https://marketingplatform.google.com/about/optimize/features/
   orgs:
