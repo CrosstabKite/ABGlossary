@@ -1,4 +1,34 @@
 
+- title: Google Optimize Features
+  link: https://marketingplatform.google.com/about/optimize/features/
+  orgs:
+    - Google
+  authors:
+  terms:
+    A/B test: >-
+      "let you test multiple versions of the same web page to learn which page works
+      best for your users."
+    A/B/n test: synonym for "A/B test"
+    multivariate test: >-
+      "allow you to test multiple elements on a page to see which combination achieves
+      your goals."
+    split URL test: >-
+      "a type of A/B test that lets you test separate pages against each other. With
+      redirect tests, the test variants are identified by URL instead of page element
+      which is most useful when testing two very different landing pages or a complete
+      page redesign."
+    redirect test: synonym for "spit URL test"
+    server-side experiment:
+    activity log: >-
+      "keeps a chronological history of changes. View changes made to an account or
+      container, when they were made, and who made them."
+    experiment preview: >-
+      "In preview mode, you can see how the variant you’ve created looks on different
+      platforms and devices before you run your experiment."
+    system objective: >-
+      "common objectives that are often used in experiments. You can add a system
+      objective to any experiment with Optimize."
+
 - title: Under the Hood of Uber’s Experimentation Platform
   link: https://eng.uber.com/xp/
   orgs:
