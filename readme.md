@@ -69,7 +69,7 @@ To see the CLI documentation:
 ```bash
 $ python abglossary.py --help
 $ python abglossary.py list --help
-$ python abglossar.py query --help
+$ python abglossary.py query --help
 ```
 
 To list all organizations with at least one entry in the data file:
